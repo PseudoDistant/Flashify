@@ -1,0 +1,6 @@
+content   flashify                content/
+skin      flashify  classic/1.0   skin/
+locale    flashify  en-US         locale/en-US/
+
+overlay chrome://browser/content/browser.xul  chrome://flashify/content/browserOverlay.xul
+style chrome://global/content/customizeToolbar.xul chrome://flashify/skin/browserOverlay.css

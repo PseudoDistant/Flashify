@@ -1,0 +1,15 @@
+#flashify-button {
+  list-style-image:url('chrome://flashify/skin/icon24.png');
+}
+
+#flashify-button.flashifyNotReady {
+  list-style-image:url('chrome://flashify/skin/icon24Grey.png');
+}
+
+toolbar[iconsize="small"] #flashify-button {
+  list-style-image:url('chrome://flashify/skin/icon.png');
+}
+
+toolbar[iconsize="small"] #flashify-button.flashifyNotReady {
+  list-style-image:url('chrome://flashify/skin/iconGrey.png');
+}

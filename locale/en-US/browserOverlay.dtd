@@ -1,0 +1,5 @@
+<!ENTITY flashify.button.label            "Flashify!">
+<!ENTITY flashify.button.tooltip          "Flashify page!">
+<!ENTITY flashify.menu.redirect           "Redirect to Flash content">
+<!ENTITY flashify.menu.redirectNewTab     "Open Flash content in new tab">
+<!ENTITY flashify.menu.settings           "Preferences...">

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet type="text/css" href="chrome://global/skin/" ?>
+<?xml-stylesheet type="text/css" href="chrome://flashify/skin/browserOverlay.css"?>
+
+<!DOCTYPE overlay SYSTEM
+  "chrome://flashify/locale/browserOverlay.dtd">
+
+<overlay id="flashify-browser-overlay"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script type="application/x-javascript"
+    src="chrome://flashify/content/browserOverlay.js" />
+  <!--image="chrome://flashify/skin/icon.png"-->
+  <toolbarpalette id="BrowserToolbarPalette">
+    <toolbarbutton id="flashify-button"
+                   type="menu-button"
+                   class="flashifyNotReady"
+                   label="&flashify.button.label;"
+                   tooltiptext="&flashify.button.tooltip;"
+                   oncommand="Flashify.BrowserOverlay.enflashicitate(event, false, false, true);"
+                   >
+      <menupopup>
+        <menuitem id="flashify-in-menu"
+          label="&flashify.button.label;"
+          oncommand="Flashify.BrowserOverlay.enflashicitate(event, false, false, false);"/>
+        <menuitem id="flashify-redirect"
+          label="&flashify.menu.redirect;" 
+          oncommand="Flashify.BrowserOverlay.enflashicitate(event, true, false, false);"/>
+        <menuitem id="flashify-redirect-new-tab"
+          label="&flashify.menu.redirectNewTab;"
+          oncommand="Flashify.BrowserOverlay.enflashicitate(event, true, true, false);"/>
+        <menuitem id="flashify-settings"
+          label="&flashify.menu.settings;"
+          oncommand="Flashify.BrowserOverlay.openSettings();"/>
+      </menupopup>
+    </toolbarbutton>
+  </toolbarpalette>
+</overlay>

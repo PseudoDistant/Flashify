@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="chrome://global/skin/global.css"?>
+<!DOCTYPE window SYSTEM "chrome://flashify/locale/browserOverlay.dtd">
+<dialog
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+    id="flashify-preferences"
+    title="Flashify Preferences..."
+    ondialogaccept="Flashify.Preferences.onOk();">
+  <script type="application/x-javascript" src="chrome://flashify/content/preferences.js"/>
+    
+  <hbox>
+    <groupbox>
+      <caption label="Default action:"/>
+      <radiogroup id="default-flashify-action"
+                  oncommand="Flashify.Preferences.checkRadioType();">
+        <radio label="Embed"/>
+        <radio label="Redirect"/>
+        <radio label="Open in New Tab"/>
+      </radiogroup>
+    </groupbox>
+    <spacer flex="1"/>
+    <groupbox>
+      <checkbox id="trust-newgrounds" 
+                label="Trust Flash content on Newgrounds"/>
+    </groupbox>
+  </hbox>
+</dialog>
